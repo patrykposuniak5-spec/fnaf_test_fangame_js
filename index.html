@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FNaF 1 - Main Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="message">
+  <button id="exitToMenuBtn">Wyjście</button>
+</div>
+</div>
+  <!-- Ekran główny (menu) -->
+  <div id="mainMenu">
+    <h1>FIVE NIGHTS AT FREDDY'S</h1>
+    <button id="startBtn">Start Night</button>
+    <p>Przetrwaj do 6 AM. Pilnuj baterii. Freddy się zbliża...</p>
+  </div>
+
+  <!-- Ekran gry (początkowo ukryty) -->
+  <div id="game" style="display: none;">
+    <div id="screen">
+      <<!-- Biuro -->
+        <img id="officeBg" src="assets/office.jpg" alt="Biuro">
+
+        <!-- Kamery -->
+        <img id="cam_1A" class="camera-view" src="assets/cam_1A.jpg" alt="Kamera 1A">
+        <img id="cam_1B" class="camera-view" src="assets/cam_1B.jpg" alt="Kamera 1B">
+        <img id="cam_2A" class="camera-view" src="assets/cam_2A.jpg" alt="Kamera 2A">
+        <img id="cam_2B" class="camera-view" src="assets/cam_2B.jpg" alt="Kamera 2B">
+        <img id="cam_3" class="camera-view" src="assets/cam_3.jpg" alt="Kamera 3">
+        <img id="cam_4A" class="camera-view" src="assets/cam_4A.jpg" alt="Kamera 4A">
+        <img id="cam_4B" class="camera-view" src="assets/cam_4B.jpg" alt="Kamera 4B">
+        <img id="cam_5" class="camera-view" src="assets/cam_5.jpg" alt="Kamera 5">
+        <img id="cam_6" class="camera-view" src="assets/cam_6.jpg" alt="Kamera 6">
+        <img id="cam_7" class="camera-view" src="assets/cam_7.jpg" alt="Kamera 7">
+
+        <!-- Freddy -->
+        <img id="freddy" src="assets/freddy.png" alt="Freddy">
+
+        <div id="cameras">Kamera: Biuro</div>
+        <div id="power">Bateria: 100%</div>
+        <div id="time">12 AM</div>
+
+        <button id="leftBtn" class="btn">←</button>
+        <button id="rightBtn" class="btn">→</button>
+        <button id="downBtn" class="btn down">↓</button>
+
+        <div id="message"></div>
+    </div>
+  </div>
+
+  <audio id="gameAudio" loop preload="auto">
+  <source src="assets/soundtrack.mp3" type="audio/mpeg">
+  Twoja przeglądarka nie obsługuje audio.
+</audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
